@@ -12,7 +12,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="-1dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-android:background="@drawable/values1"
+            android:background="@drawable/values1"
             android:text="Button" />
 
         <Button
@@ -32,7 +32,8 @@ android:background="@drawable/values1"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:alpha="0.25"
-            android:color="#66FF0000"
-            android:text="Button" />
+            android:color="#07000000"
+            android:text="Button"
+            android:textColor="@android:color/holo_blue_bright" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
