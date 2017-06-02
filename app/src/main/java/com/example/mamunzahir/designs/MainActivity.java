@@ -15,19 +15,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.myfinal);
+        setContentView(R.layout.test);
 
         // Get the application context
         mContext = getApplicationContext();
 
         // Get the Resources
         mResources = getResources();
-        mTextView = (TextView) findViewById(R.id.tv);
-        applyBlurMaskFilter(mTextView, BlurMaskFilter.Blur.OUTER);
+       // mTextView = (TextView) findViewById(R.id.tv);
+       // applyBlurMaskFilter(mTextView, BlurMaskFilter.Blur.OUTER);
     }
     protected void applyBlurMaskFilter(TextView tv, BlurMaskFilter.Blur style){
 
-        float radius = tv.getTextSize()/10;
+        float radius = tv.getTextSize()/8;
 
         // Initialize a new BlurMaskFilter instance
         BlurMaskFilter filter = new BlurMaskFilter(radius,style);
